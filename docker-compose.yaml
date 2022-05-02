@@ -1,0 +1,13 @@
+services:
+  server1:  
+    build:
+      context: ./apidemo
+      dockerfile: Dockerfile
+    ports: 
+      - '3000:3000'
+  server2:  
+    build:
+      context: ./apidemo2
+      dockerfile: Dockerfile
+    ports: 
+      - '3001:3001'
